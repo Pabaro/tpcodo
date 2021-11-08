@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  
+  <link rel="stylesheet" href="styles.css" />
+  <script src="https://kit.fontawesome.com/e15e8c34af.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+  <title>El Club de El Barón de la Cerveza</title>
+</head>
+
+<body>
+  <header id=header> </header>
+  <script src="header.js"> </script>
+
+  <section class="login" id="login">
+    <h2>Hacete Socio del Club de El Baron de la Cerveza!! </h2>
+    <img class="animate__animated animate__heartBeat" src="Homerapunta.jpg" alt="Homero apunta"
+      /><br>
+
+
+    <br>
+
+    <h2>Si ya sos Socio del Club,<br> ingresa con tu Usuario y Clave</h2>
+    <div class="login-form-container">
+      <div class="login-form">
+        <form action="show_data1.html" target="_blank">
+          <div class="form-control">
+            <label for="usuario">Usuario</label>
+            <input type="text" id="usuario" name="Usuario" placeholder="Ingresá tu Usuario" class="input-field" required
+              minlength="6" maxlength="30" />
+          </div>
+          <div class="form-control">
+            <label for="password">Clave</label>
+            <input type="password" id="password" name="Clave" placeholder="Ingresá tu Clave" class="input-field"
+              required maxlength="20" minlength="8" />
+          </div>
+          <input type="submit" value="Enviar" id="submit-btn" class="submit-btn" />
+          <h4>Si olvidaste tu Clave, <a href="contacto.html" class="nav-link">Contactanos.</a></h4>
+        </form>
+      </div>
+    </div>
+  </section>
+  <br><br>
+  <section class="registro" id="registro">
+
+    <h2>Registrate gratis para recibir todas las novedades por
+      correo electrónico, sumar puntos con tus compras y tus opiniones sobre los productos para conseguir descuentos
+      exclusivos.</h2>
+
+
+    <div class="registro-form-container">
+      <div class="registro-form">
+        <form action="show_data1.html" target="_blank">
+          <fieldset>
+            <legend><strong>Generá un nuevo Usuario del Club</strong></legend>
+            <div class="form-control">
+              <label for="usuario">Usuario</label>
+              <input type="text" id="usuario" name="Usuario" placeholder="Ingresá tu Usuario" class="input-field"
+                required minlength="6" maxlength="30" />
+            </div>
+            <div class="form-control">
+              <label for="password">Clave</label>
+              <input type="password" id="password" name="Clave" placeholder="Ingresá tu Clave" class="input-field"
+                required maxlength="20" minlength="8" />
+            </div>
+            <div class="form-control">
+              <label for="password">Repetí tu Clave</label>
+              <input type="password" id="password" name="Clave" placeholder="Ingresá nuevamente tu Clave"
+                class="input-field" required maxlength="20" minlength="8" />
+              <h5>La contraseña debe cumplir los requisitos:<br>
+
+                * Contener, al menos, 8 caracteres.<br>
+                * Contener, al menos, 1 letra mayúscula.<br>
+                * No contener el nombre de usuario.<br>
+                * No contener palabras restringidas.<br>
+                * No coincidir con contraseñas utilizadas anteriormente.</h5><br>
+            </div>
+            <div class="form-control">
+              <h4 style="color:blue" ;>Información necesaria para recuperar la contraseña</h4>
+              <label for="pregunta">Pregunta de seguridad</label> <input list="pregunta" name="pregunta"
+                style="width:50%;">
+              <datalist id="pregunta">
+                <option value="escuela">cuál es el nombre de tu primera escuela?</option>
+                <option value="musical">cuál es el nombre de tu grupo musical favorito?</option>
+                <option value="profesor">cuál es el nombre de tu profesoer favorito?</option>
+                <option value="mascota">cuál es el nombre de tu primera mascota?</option>
+                <option value="amigo">cuál es el nombre del mejor amigo de tu infancia?</option>
+                <option value="madre">cuál es el lugar de nacimiento de tu madre?</option>
+              </datalist> <input type="text" placeholder="Ingresá tu respuesta" class="input-field" required
+                maxlength="40" minlength="1" />
+
+            </div>
+            <div class="form-control">
+              <label for="email">Email</label>
+              <input type="email" id="email" name="Email" placeholder="Ingresá tu correo electrónico"
+                class="input-field" required maxlength="100" minlength="10" />
+            </div>
+            <div class="form-control">
+              <label for="Confirma tu email">Confirmá tu Email</label>
+              <input type="email" id="email" name="Email" placeholder="Ingresá nuevamente tu correo electrónico"
+                class="input-field" required maxlength="100" minlength="10" />
+            </div>
+          </fieldset>
+          <fieldset>
+            <legend><strong>Datos Personales:</strong> </legend>
+            <div class="form-control">
+              <label for="nombre">Nombre</label>
+              <input type="text" id="nombre" name="Nombre" placeholder="Ingresá tu Nombre" class="input-field" required
+                minlength="2" maxlength="30" />
+            </div>
+            <div class="form-control">
+              <label for="apellido">Apellido</label>
+              <input type="text" id="apellido" name="Apellido" placeholder="Ingresá tu Apellido" class="input-field"
+                required minlength="2" maxlength="30" />
+            </div>
+            <div class="form-control">
+              <label for="genero">Género: </label>
+              <input type="radio" name="gender" value="Hombre" id="hombre" required checked>Hombre
+              <input type="radio" name="gender" value="Mujer" id="mujer">Mujer
+              <input type="radio" name="gender" value="Otro" id="otro">Otro
+
+            </div>
+
+            <br>
+            <h4>Fecha de Nacimiento</h4>
+
+            <div class="form-control">
+              <label for="dia">Día de tu nacimiento</label>
+              <input type="number" id="dia" name="dia" placeholder="Ingresá el día en que naciste" class="input-field"
+                required min=01 max=31 />
+            </div>
+            <div class="form-control">
+              <label for="mes">Mes de tu nacimiento</label>
+              <input type="number" id="mes" name="mes" placeholder="Ingresá el mes en que naciste" class="input-field"
+                required min=01 max=12 />
+            </div>
+            <div class="form-control">
+              <label for="anio">Año de tu nacimiento</label>
+              <input type="number" id="anio" name="anio" placeholder="Ingresá el año en que naciste" class="input-field"
+                required min=1920 max=2003 />
+              <h5>Debes ser mayor de edad</h5>
+            </div>
+            <br>
+            <h4>Dirección</h4>
+            <div class="form-control">
+              <label for="direccion">Dirección</label>
+              <input type="text" id="direccion" name="direccion"
+                placeholder="Ingresá el nombre de la calle o avenida donde vivis" class="input-field" required
+                minlength="2" maxlength="30" />
+            </div>
+            <div class="form-control">
+              <label for="dirnum">Número</label>
+              <input type="text" id="dirnum" name="número" placeholder="Ingresá el número de tu dirección"
+                class="input-field" required minlength="1" maxlength="5" />
+            </div>
+            <div class="form-control">
+              <label for="codpost">Código Postal</label>
+              <input type="text" id="codpost" name="codpost" placeholder="Ingresá el código postal de tu dirección"
+                class="input-field" required minlength="4" maxlength="10" />
+            </div>
+            <div class="form-control">
+              <label for="provincia">Provincia</label>
+              <input type="text" id="provincia" name="provincia" placeholder="Ingresá el nombre de tu provincia"
+                class="input-field" required minlength="4" maxlength="20" />
+              <div class="form-control">
+                <label for="ciudad">Ciudad o Localidad</label>
+                <input type="text" id="ciudad" name="ciudad" placeholder="Ingresá el nombre de tu ciudad o localidad"
+                  class="input-field" required minlength="2" maxlength="30" />
+              </div>
+              <div class="form-control">
+                <label for="pais">País</label>
+                <input type="text" id="pais" name="pais" placeholder="Ingresá el nombre de tu país" class="input-field"
+                  required minlength="2" maxlength="30" />
+              </div>
+              <div class="form-control">
+                <label for="telefono">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" placeholder="Ingresá el número de tu teléfono"
+                  class="input-field" minlength="10" maxlength="30" />
+              </div>
+              <div class="form-control">
+                <label for="estudios">Nivel de Estudios: </label>
+                <select id="estudios" name="estudios">
+                  <option value="primaria">Primaria incompleta</option>
+                  <option value="primaria">Primaria completa</option>
+                  <option value="secundaria">Secundaria incompleta</option>
+                  <option value="secundaria">Secundaria completa</option>
+                  <option value="terciario">Terciario incompleto</option>
+                  <option value="terciario">Terciario completo</option>
+                  <option value="universitario">Grado Universitario incompleto</option>
+                  <option value="universitario">Grado Universitario completo</option>
+                  <option value="universitario">Título de Posgrado Universitario incompleto</option>
+                  <option value="universitario">Título de Posgrado Universitario completo</option>
+                </select>
+              </div>
+              <br>
+
+          </fieldset>
+
+          <fieldset>
+            <legend><strong>Preferencias y frecuencia de consumo:</strong> </legend>
+            <div class="form-control">
+
+              <label for="litros por semana">indicá la cantidad promedio de litros de cerveza que consumis por
+                semana:</label>
+              <input type="number" id="litrossemana" name="litrossemana" min="0" max="35"><br>
+            </div>
+            <div class="form-control"> <label for="litros por semana">
+                <p>Indicá qué bebidas alcohólicas sueles consumir:</p>
+              </label>
+              <input type="checkbox" name="conocimientos" value="Cerveza" checked> Cerveza
+              <input type="checkbox" name="conocimientos" value="Vino"> Vino
+              <input type="checkbox" name="conocimientos" value="Espumantes"> Espumantes
+              <input type="checkbox" name="conocimientos" value="Gin"> Gin
+              <input type="checkbox" name="conocimientos" value="Sidra"> Sidra
+              <input type="checkbox" name="conocimientos" value="whisky"> whisky
+              <input type="checkbox" name="conocimientos" value="Fernet"> Fernet
+              <input type="checkbox" name="conocimientos" value="Aperitivos"> Aperitivos
+              
+            </div>
+            <div class="form-control"> <label for="litros por semana">
+              <p>Indicá qué estilos de cerveza preferis tomar:</p>
+            </label>
+            <input type="checkbox" name="conocimientos" value="IPAs" checked> IPAs
+            <input type="checkbox" name="conocimientos" value="Stout"> Stout
+            <input type="checkbox" name="conocimientos" value="Honey"> Honey
+            <input type="checkbox" name="conocimientos" value="Scotish"> Scotish
+            <input type="checkbox" name="conocimientos" value="Blonde"> Blonde
+            <input type="checkbox" name="conocimientos" value="Lager"> Lager
+            <input type="checkbox" name="conocimientos" value="Porter"> Porter
+            <input type="checkbox" name="conocimientos" value="Sour"> Sour
+            
+          </div>
+          </fieldset>
+
+
+          <input type="submit" value="Enviar" id="submit-btn" class="submit-btn" />
+
+
+
+        </form>
+      </div>
+    </div>
+
+
+  </section>
+
+
+</body>
+
+</html>
+
+
+
+
+
+
+<footer id="footer">
+
+
+</footer>
+<script src="footer.js"></script>
+
+
+
+
+</body>
+
+</html>
